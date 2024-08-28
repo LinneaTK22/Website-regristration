@@ -1,0 +1,95 @@
+<!-- AUTO SAVE? -->
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="style.css">
+        <title>Registration form</title>
+    </head>
+    <body>
+        <section class="container">
+            <header>Registration form</header>
+            <form action="#" class="form">
+                <div class="input-box">
+                    <label> Full name</label>
+                    <input type="text" placeholder="Full Name" name="Fname" id="Fname" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Email</label>
+                    <input type="text" placeholder="Email" name="Email" id="Email" required>
+                </div>
+
+                <div class column>
+                    <div class="input-box">
+                        <label>Phone number</label>
+                        <input type="number" placeholder="+46 00 000 00 00" name="Phone nr" id="Phone nr" required>
+                        
+                        <label>Birthday</label>
+                        <input type="date" placeholder="dd/mm/yyyy" name="bday" id="bday" required>
+                    </div>
+                </div>
+                
+                <div class="gender-box">
+                    <h3>Gender</h3>
+                    <div class="gender-option">
+                        <div class="gender">
+                            <input type="radio" id="check-male" name="gender"/>
+                            <label for="check-male">Male</label>
+                        </div>
+                        <div class="gender">
+                            <input type="radio" id="check-female" name="gender"/>
+                            <label for="check-female">Female</label>
+                        </div>
+                        <div class="gender">
+                            <input type="radio" id="check-other" name="gender"/>
+                            <label for="check-other">Perfer not to say</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="input-box">
+                    <label>Adress</label>
+                    <input type="text" placeholder="Street adress" required/>
+                    <input type="text" placeholder="Street adress 2"/>
+                    
+                    <div class="column">
+                        <div class="select-box">
+                            <select>
+                                <option hidden>Continent</option>
+                                <option>Asia</option>
+                                <option>Afica</option>
+                                <option>Austria</option>
+                                <option>Europe</option>
+                                <option>North America</option>
+                                <option>South America</option>
+                            </select>
+                        </div>
+                        <input type="text" placeholder="City" required/>
+                    </div>
+                    <div class="column">
+                        <input type="text" placeholder="Region" required/>
+                        <input type="number" placeholder="zip code" required/>
+                    </div>
+                </div>
+
+
+                <div class="newsletter-terms-box">
+                    <div class="newsletter-terms-option">
+                        <div class="newsletter-terms">
+                            <input type="checkbox" id="check-male" name="gender"/>
+                            <label for="check-male">Subscribe to our Newsletter</label>
+                        </div>
+                        <div class="newsletter-terms">
+                            <input type="checkbox" id="check-female" name="gender"/>
+                            <label for="check-female">Accepte our terms & conditions required</label>
+                        </div>
+                    </div>
+                </div>
+                <button>Submit</button>
+            </form>
+        </section>
+    </body>
+</html>
