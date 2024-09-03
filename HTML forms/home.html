@@ -6,14 +6,19 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="style.css">
+        <link href="test_form.php">
         <title>Registration form</title>
     </head>
     <body>
-        <section class="container">
+        <div class="sidebanner-left">
+            <img src="sidebanner-left-pic.jpg" style="width: 575px; height: auto;">
+        </div>
+        <section class="sidebanner-right">
             <header>Registration form</header>
-            <form action="#" class="form">
+            
+            <form  class="form"  method="post" action="test_form.php">
                 <div class="input-box">
-                    <label> Full name</label>
+                    <label>Full name</label>
                     <input type="text" placeholder="Full Name" name="Fname" id="Fname" required>
                 </div>
 
@@ -26,7 +31,8 @@
                     <div class="input-box">
                         <label>Phone number</label>
                         <input type="number" placeholder="+46 00 000 00 00" name="Phone nr" id="Phone nr" required>
-                        
+                    </div>
+                    <div class="input-box">
                         <label>Birthday</label>
                         <input type="date" placeholder="dd/mm/yyyy" name="bday" id="bday" required>
                     </div>
@@ -35,15 +41,15 @@
                 <div class="gender-box">
                     <h3>Gender</h3>
                     <div class="gender-option">
-                        <div class="gender">
+                        <div class="gender, input-box-gender">
                             <input type="radio" id="check-male" name="gender"/>
                             <label for="check-male">Male</label>
                         </div>
-                        <div class="gender">
+                        <div class="gender, input-box-gender">
                             <input type="radio" id="check-female" name="gender"/>
                             <label for="check-female">Female</label>
                         </div>
-                        <div class="gender">
+                        <div class="gender, input-box-gender">
                             <input type="radio" id="check-other" name="gender"/>
                             <label for="check-other">Perfer not to say</label>
                         </div>
@@ -74,7 +80,6 @@
                         <input type="number" placeholder="zip code" required/>
                     </div>
                 </div>
-
 
                 <div class="newsletter-terms-box">
                     <div class="newsletter-terms-option">
